@@ -7,6 +7,10 @@
     margin-bottom: 2px;
 }
 
+.account-masthead .account ul li {
+    background: #005d7a url("../../../base/images/bg.png");
+}
+
 .account-masthead .account ul li a {
     color: #fff;
 }
