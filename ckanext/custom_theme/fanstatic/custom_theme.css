@@ -1,7 +1,9 @@
 .account-masthead {
     background: #fff url(/images/bg-header.png) no-repeat;
-    min-height: 300px;
-    background-size: cover;
+    height: 100px;
+    # min-height: 200px;
+    # background-size: cover;
+    background-size: auto;
 }
 
 .masthead .navigation {

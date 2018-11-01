@@ -34,7 +34,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
     def dataset_facets(self, facets_dict, package_type):
         if package_type <> 'harvest':
             return OrderedDict([('tags', 'Disciplines'),
-                            ('groups', 'Collections'),
+                            ('groups', 'Keywords'),
                             ('license_id', 'Data access'),
                            ])
 	else:
@@ -49,7 +49,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('tags')
         facets_dict.pop('res_format')
         facets_dict['tags'] = 'Disciplines'
-        facets_dict['groups'] = 'Collections'
+        facets_dict['groups'] = 'Keywords'
         facets_dict['license_id'] = 'Data access'
 
         return facets_dict
@@ -61,7 +61,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('tags')
         facets_dict.pop('res_format')
         facets_dict['tags'] = 'Disciplines'
-        facets_dict['groups'] = 'Collections'
+        facets_dict['groups'] = 'Keywords'
         facets_dict['license_id'] = 'Data access'
 
         return facets_dict
