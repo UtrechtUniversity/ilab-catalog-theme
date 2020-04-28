@@ -35,6 +35,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         if package_type <> 'harvest':
             return OrderedDict([('tags', 'Disciplines'),
                             ('groups', 'Keywords'),
+                            ('Collections', toolkit._('Collections')),
                             ('license_id', 'Data access'),
                            ])
 	else:
@@ -50,6 +51,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('res_format')
         facets_dict['tags'] = 'Disciplines'
         facets_dict['groups'] = 'Keywords'
+        #facets_dict['collection'] = 'Collection'
         facets_dict['license_id'] = 'Data access'
 
         return facets_dict
@@ -62,6 +64,7 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('res_format')
         facets_dict['tags'] = 'Disciplines'
         facets_dict['groups'] = 'Keywords'
+        facets_dict['Collections'] = 'Collections'
         facets_dict['license_id'] = 'Data access'
 
         return facets_dict
