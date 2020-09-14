@@ -1,0 +1,8 @@
+custom_script:  # name of the asset
+  output: custom_theme/custom_theme.js  # actual path, where the generated file will be stored
+  contents: # list of files that are included in the asset
+    - custom_theme.js
+custom_style:  # name of asset
+  output: custom_theme/custom_theme.css  # actual path, where generated file will be stored
+  contents: # list of files that are included into asset
+    - custom_theme.css
