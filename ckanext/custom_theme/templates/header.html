@@ -24,7 +24,7 @@
               {% set new_activities = h.new_activities() %}
               <li class="notifications {% if new_activities > 0 %}notifications-important{% endif %}">
                 {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard (%(num)d new items)', new_activities) %}
-                <a href="{{ h.url_for(controller='user', action='dashboard') }}" title="{{ notifications_tooltip }}">
+                <a href="{{ h.url_for(controller='dashboard', action='index') }}" title="{{ notifications_tooltip }}">
                   <i class="icon-dashboard" aria-hidden="true"></i>
                   <span class="text">{{ _('Dashboard') }}</span>
                   <span class="badge">{{ new_activities }}</span>
@@ -101,7 +101,7 @@
       {% endblock %}
 
       {% block header_site_search %}
-        <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
+        <form class="section site-search simple-input" action="{% url_for controller='dataset', action='search' %}" method="get">
           <div class="field">
             <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
             <input id="field-sitewide-search" type="text" name="q" placeholder="{{ _('Search') }}" />

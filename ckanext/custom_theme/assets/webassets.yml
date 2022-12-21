@@ -1,0 +1,11 @@
+msl_ckan-js:
+  filter: rjsmin
+  output: custom_theme/custom_theme.js
+  contents:
+    - custom_theme.js
+
+msl_ckan-css:
+  filter: cssrewrite
+  output: custom_theme/custom_theme.css
+  contents:
+    - custom_theme.css
