@@ -1,6 +1,6 @@
 {% extends "package/base.html" %}
 
-{% set default_group_type = h.default_group_type('group') %}
+{% set default_group_type = h.default_group_type() %}
 
 {% block subtitle %}{{ h.dataset_display_name(pkg) }} {{ g.template_title_delimiter }} {{ super() }}{% endblock %}
 
