@@ -21,8 +21,8 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
     # package_type is 'dataset' for Dataset menu option
     def dataset_facets(self, facets_dict, package_type):
         if package_type != 'harvest':
-            return OrderedDict([('tags', 'Disciplines'),
-                                ('groups', 'Keywords'),
+            return OrderedDict([('vocab_discipline', 'Disciplines'),
+                                ('vocab_keyword', 'Keywords'),
                                 ('Collections', toolkit._('Collections')),
                                 ('license_id', 'Data access')])
         else:
@@ -36,8 +36,8 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('license_id')
         facets_dict.pop('tags')
         facets_dict.pop('res_format')
-        facets_dict['tags'] = 'Disciplines'
-        facets_dict['groups'] = 'Keywords'
+        facets_dict['vocab_discipline'] = 'Disciplines'
+        facets_dict['vocab_keyword'] = 'Keywords'
         #facets_dict['collection'] = 'Collection'
         facets_dict['license_id'] = 'Data access'
 
@@ -49,8 +49,8 @@ class Custom_ThemePlugin(plugins.SingletonPlugin):
         facets_dict.pop('license_id')
         facets_dict.pop('tags')
         facets_dict.pop('res_format')
-        facets_dict['tags'] = 'Disciplines'
-        facets_dict['groups'] = 'Keywords'
+        facets_dict['vocab_discipline'] = 'Disciplines'
+        facets_dict['vocab_keyword'] = 'Keywords'
         facets_dict['Collections'] = 'Collections'
         facets_dict['license_id'] = 'Data access'
 
