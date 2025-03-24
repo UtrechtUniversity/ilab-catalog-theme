@@ -1,32 +1,4 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
-
-.. image:: https://travis-ci.org/jcid/ckanext-custom_theme.svg?branch=master
-    :target: https://travis-ci.org/jcid/ckanext-custom_theme
-
-.. image:: https://coveralls.io/repos/jcid/ckanext-custom_theme/badge.svg
-  :target: https://coveralls.io/r/jcid/ckanext-custom_theme
-
-.. image:: https://pypip.in/download/ckanext-custom_theme/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-custom_theme/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-custom_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-custom_theme/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-custom_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-custom_theme/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-custom_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-custom_theme/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-custom_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-custom_theme/
-    :alt: License
+**This repository has been archived. The code is no longer maintained.**
 
 =============
 ckanext-custom_theme
